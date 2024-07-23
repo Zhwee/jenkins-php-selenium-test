@@ -11,6 +11,7 @@ ls
 # Run the Docker container
 docker run -d -p 80:80 --name my-apache-php-app -v $(pwd)/src:/var/www/html php:7.2-apache
 sleep 1
+docker ps
 set +x
 
 echo 'Now...'
