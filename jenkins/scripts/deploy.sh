@@ -5,6 +5,8 @@ git clone https://github.com/Zhwee/jenkins-php-selenium-test.git
 # Change directory to the cloned repository
 cd jenkins-php-selenium-test
 echo $(pwd)
+ls
+./kill.sh
 # Run the Docker container
 docker run -d -p 80:80 --name my-apache-php-app -v $(pwd)/src:/var/www/html php:7.2-apache
 sleep 1
